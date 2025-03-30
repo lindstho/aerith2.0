@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>43r1th.m3</title>
+    <meta name="description" content="A nostalgia web project and repository for nothing."/>
+    <meta name="keywords" content="indie web, personal site, nostalgia web"/>
+    <link rel="canonical" href="https://www.aerith.me"/>
+    <link rel="shortcut icon" href="https://amidala.neocities.org/images/favicon.ico"/>
+    <link rel="stylesheet" href="7.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>    
+<body>
+
+
+    <div id="contextMenu" class="context-menu" style="display: none;">
+    <ul role="menu" style="width: 200px">
+        <li role="menuitem" tabindex="0" aria-haspopup="true">View</li>
+        <li role="menuitem" tabindex="0" aria-haspopup="true">
+          Sort by
+          <ul role="menu">
+            <li role="menuitem"><a href="#menu">Name</a></li>
+            <li role="menuitem"><a href="#menu">Size</a></li>
+            <li role="menuitem"><a href="#menu">Item type</a></li>
+            <li role="menuitem"><a href="#menu">Date modified</a></li>
+          </ul>
+        </li>
+        <li role="menuitem"><a href="/">Refresh</a></li>
+        <li role="menuitem"><a href="#menu">Paste</a></li>
+        <li role="menuitem"><a href="#menu">Paste shortcut</a></li>
+      </ul>
+    </div>
+
+    <div id="linkspop">
+        <div class="dragblogroll">
+                <div class="window glass active" style="max-width: 250px; --window-background-color: #000000;">
+                  <div class="title-bar">
+                    <div class="title-bar-text">Links out</div>
+                    <div class="title-bar-controls">
+                      <button aria-label="Minimize"></button>
+                      <button aria-label="Close" id="closelinkspop"></button>
+                    </div>
+                  </div>
+                  <div class="window-body has-space">
+                    <ul class="tree-view">
+                        <li>My banner:<br>
+                        <img src="fs.png" border="0"></li>
+                        <li><strong style="color: green">Websites I like</strong></li>
+                        <li>
+                            <a href="https://www.cytos-stories.com/" target="_blank">Cyto's Stories</a><br>
+                            <a href="https://danedear.com" target="_blank">Sidney Goulet art</a><br>
+                            <a href="https://novov.me/" target="_blank">novov</a><br>
+                            <a href="https://maya.land/" target="_blank">maya.land</a><br>
+                            <a href="https://al1-ce.neocities.org" target="_blank">AL1-CE</a><br>
+                            <a href="https://melankorin.net/" target="_blank">melankorin.net</a><br>
+                            <a href="https://rinoa.nu/" target="_blank">Rinoa.nu</a><br>
+                            <a href="https://sweetfish.site/" target="_blank">sweetfish.site</a><br>
+                            <a href="https://github.com/syxanash/awesome-web-desktops/" target="_blank">Awesome-web-desktops</a><br>
+                            <a href="https://randomstreetview.com/#fullscreen" target="_blank">Random Street View</a><br>
+                        </li>
+                        <br>
+                        <li><strong style="color: green">Resources</strong></li>
+                        <li>
+                            <a href="https://validator.w3.org" target="_blank">W3C Markup Validation Service</a><br>
+                            <a href="" target="_blank"></a><br>
+                            <a href="" target="_blank"></a><br>
+                            <a href="" target="_blank"></a><br>
+                        </li>
+                        <a href="https://web.archive.org/web/20030810185248/http://www.mitsuzo.net/tea/" target="_blank"><img src="greentea.gif" border="0"></a><br>
+                        <div style="font-family:'Comic Sans MS','Chalkboard SE','Comic Neue',sans-serif;text-align:center">
+<a style="color:#ff00ff; text-decoration:none" href="https://genlissa.baccyflap.com/?prv&s=ami" target="_top">«</a>
+<a style="color:#ff00ff; text-decoration:none" href="https://genlissa.baccyflap.com" target="_blank">I'm Gen Lissa</a>
+<a style="color:#ff00ff; text-decoration:none" href="https://genlissa.baccyflap.com/?nxt&s=ami" target="_top">»</a>
+</div>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+    </div>
+
+    <div id="aboutpop">
+        <div class="dragabout">
+            <div class="window glass active" style="width: 300px; --window-background-color: #000000;">
+                <div class="title-bar">
+                  <div class="title-bar-text">About this website</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close" id="closeaboutpop"></button>
+                  </div>
+                </div>
+                <div class="window-body has-space">
+                    <ul class="tree-view">
+                    <img src="https://amidala.neocities.org/images/about.jpg" width="100%">
+                  This site was made in Visual Studio Code with the indie web in mind. It’s not accessibility friendly (I will work to improve that!) and it’s buggy as hell. Meant to be viewed on a desktop. Windows 98 icons from <a href="https://win98icons.alexmeub.com" target="_blank">here</a>. and CSS library from <a href="https://khang-nd.github.io/7.css/" target="_blank">here</a>. Font is <a href="https://www.dafont.com/nintendo-ds-bios.font" target="_blank">Nintendo DS BIOS</a>.
+                  <br><br>
+                  <center><a href="https://justinjackson.ca/webmaster/" target="_blank"><button>webmistress</button></a></center>
+                </ul>
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <div id="archivepop">
+        <div class="draggb">
+            <div class="window glass active" style="max-width: 450px; --window-background-color: #000000;">
+                <div class="title-bar">
+                  <div class="title-bar-text">updates.md</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Close" id="closearchivepop"></button>
+                  </div>
+                </div>
+                <div class="window-body has-space">
+                  <ul class="tree-view">
+                    <li><strong style="color: green">Jan 13 2024</strong></li>
+                    <li>
+                        Worked on minor bug fixes, updated javascript so the drag cursor is only active when the user actually starts dragging the element.
+                    </li>
+                    <br>
+                    <li><strong style="color: green">Jan 11 2024</strong></li>
+                    <li>
+                        To do:<br>
+                        - write alt text descriptions for images<br>
+                        - fix letter spacing/line height<br>
+                        - implement doubleclick link event handler<br>
+                    </li>
+                    <br>
+                    <li><strong style="color: green">Jan 09 2024</strong></li>
+                    <li>
+                        Introduced a responsive tag to control the viewport. Does it work? :(
+                    </li>
+                    <br>
+                      <li><strong style="color: green">Jan 08 2024</strong></li>
+                      <li>
+                        Complete overhaul of website, implemented <a href="https://khang-nd.github.io/7.css/" target="_blank">7.css</a> library. Previous version was a web desktop similar to this, but way too buggy and ugly. In process of migrating from <a href="https://amidala.neocities.org/" target="_blank">neocities</a>.
+                      </li>
+                    </ul>
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+    <div id="sbimg1">
+        <div class="dragimg1">
+                    <div class="window glass active" style="width: 300px; --window-background-color: #000000;">
+                        <div class="title-bar">
+                          <div class="title-bar-text">Recycle bin</div>
+                          <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close" id="closesbimg1"></button>
+                          </div>
+                        </div>
+                        <div class="window-body">
+                          <img src="images/recycle.jpg" width="100%">
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sbimg2">
+        <div class="dragimg2">
+                    <div class="window glass active" style="width: 300px; --window-background-color: #000000;">
+                        <div class="title-bar">
+                          <div class="title-bar-text">Timothy &#9829;</div>
+                          <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close" id="closesbimg2"></button>
+                          </div>
+                        </div>
+                        <div class="window-body">
+                          <img src="images/tim.jpg" width="100%">
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="desktop3">
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a id="opensbimg1">
+                        <img src="/images/icon-recycle.png">
+                    </a>
+                </div>
+                <div class="shortcutname">
+                    <a id="opensbimg1">
+                        <span class="scnbg">Recycle Bin</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a id="opensbimg2">
+                        <img src="/images/icon-paint.png">
+                    </a>
+                </div>
+                <div class="shortcutname">
+                    <a id="opensbimg2">
+                        <span class="scnbg">tim.bmp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a href="https://greatgospel.neocities.org" target="_blank">
+                        <img src="/images/icon-aeris.gif">
+                    </a>
+                </div>
+                <div class="shortcutname">
+                    <a id="/">
+                        <span class="scnbg">Great Gospel</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="desktop2">
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a href="mailto:lindstho@proton.me">
+                        <img src="/images/icon-email.png">
+                    </a>
+                </div>
+                <a href="/">
+                    <div class="shortcutname">
+                        <span class="scnbg">E-mail</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a href="/browser" target="blank">
+                        <img src="/images/icon-internet.png">
+                    </a>
+                </div>
+                <a href="/">
+                    <div class="shortcutname">
+                        <span class="scnbg">World Wide Web</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="desktop">
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a id="openarchivepop">
+                        <img src="/images/icon-notepad.png">
+                    </a>
+                </div>
+                <a id="openarchivepop">
+                    <div class="shortcutname">
+                        <span class="scnbg">changelog</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a id="openaboutpop">
+                        <img src="/images/icon-documents.png">
+                    </a>
+                </div>
+                <a id="openaboutpop">
+                    <div class="shortcutname">
+                        <span class="scnbg">About</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a id="openlinkspop">
+                        <img src="/images/icon-links.png">
+                    </a>
+                </div>
+                <a id="openlinkspop">
+                    <div class="shortcutname">
+                        <span class="scnbg">Links</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a href="http://users3.smartgb.com/g/g.php?a=s&amp;i=g36-37221-11" target="_blank">
+                        <img src="/images/icon-guestbook.png">
+                    </a>
+                </div>
+                <a href="/">
+                    <div class="shortcutname">
+                        <span class="scnbg">Guestbook</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="shortcut">
+            <div class="scn">
+                <div class="shortcuticon">
+                    <a href="/bsod">
+                        <img src="/images/icon-clean.png">
+                    </a>
+                </div>
+                <a href="/bsod">
+                    <div class="shortcutname">
+                        <span class="scnbg">Disk Clean</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <ul role="menubar" style="position: fixed; bottom: 0; left: 0; width: 100%;">
+        <div id="taskbar-button" class="glass active" style="display: inline-block; padding: 6px 5px; cursor: pointer;"><button><img src="/images/taskbar-power.png"></button>
+        </div>
+    
+    <ul id="menu-container" role="menu" style="position: absolute; bottom: 35px; left: 0; border: 1px solid #ccc; padding: 5px; display: none;">
+        <li role="menuitem" tabindex="0" aria-haspopup="true">
+            Currently
+            <ul role="menu">
+                <li role="menuitem"><a href="#menu">📺  Severance</a></li>
+                <li role="menuitem"><a href="#menu">📖  A Little Trickerie</a></li>
+                <li role="menuitem"><a href="#menu">🎮  Silent Hill 2 Remake</a></li>
+                <li role="menuitem"><a href="#menu">💿  CBD Reiki Moonbeam</a></li>
+            </ul>
+        </li>
+        <li role="menuitem"><a href="https://neocities.org/tutorials">Help</a></li>
+        <li role="menuitem" aria-disabled="true"><a href="#menu">Paste</a></li>
+        <li role="menuitem" aria-disabled="true">
+            <a href="#menu">Paste shortcut</a>
+        </li>
+        <li role="menuitem">
+            <img src="/images/taskbar-command.png" alt="Screen Resolution">
+            <a href="https://neocities.org/browse">Run</a>
+        </li>
+        <li role="menuitem">
+            <img src="/images/taskbar-smiley.png" alt="Gadgets">
+            <a href="https://neocities.org/dashboard">Settings</a>
+        </li>
+        <li role="menuitem">
+            <img src="/images/taskbar-restart.png" alt="Personalize">
+            <a href="https://neocities.org/site/amidala">Power down...</a>
+        </li>
+    </ul>
+    </ul>
+
+    <script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+
+        function rightClick(e) {
+            e.preventDefault();
+
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                let menu = document
+                    .getElementById("contextMenu")
+
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#closesbimg1").click(function() {
+                $("#sbimg1").fadeOut();
+            }); /** closing sb image 1 **/
+            $("#opensbimg1").click(function() {
+                $("#sbimg1").fadeIn();
+            }); /** opening sb image 1 **/
+            $("#closesbimg2").click(function() {
+                $("#sbimg2").fadeOut();
+            }); /** closing sb image 2 **/
+            $("#opensbimg2").click(function() {
+                $("#sbimg2").fadeIn();
+            }); /** opening sb image 2 **/
+            $("#closearchivepop").click(function() {
+                $("#archivepop").fadeOut();
+            }); /** closing archive pop up **/
+            $("#openarchivepop").click(function() {
+                $("#archivepop").fadeIn();
+            }); /** opening archive pop up **/
+            $("#closeaboutpop").click(function() {
+                $("#aboutpop").fadeOut();
+            }); /** closing about pop up **/
+            $("#openaboutpop").click(function() {
+                $("#aboutpop").fadeIn();
+            }); /** opening about pop up **/
+            $("#closeaskboxpop").click(function() {
+                $("#askboxpop").fadeOut();
+            }); /** closing askbox pop up **/
+            $("#openaskboxpop").click(function() {
+                $("#askboxpop").fadeIn();
+            }); /** opening askbox pop up **/
+            $("#closelinkspop").click(function() {
+                $("#linkspop").fadeOut();
+            }); /** closing blogroll pop up **/
+            $("#openlinkspop").click(function() {
+                $("#linkspop").fadeIn();
+            }); /** opening blogroll pop up **/
+        });
+        $(document).ready(function() {
+            $(".taskbariconi").click(function() {
+                $(".startmenu").fadeToggle();
+            });
+            $(".taskbariconi").click(function() {
+                $(".taskbariconi").toggleClass("tbibg2");
+            });
+        });
+        </script>
+    <script>
+        $(function() {
+            $("#sbimg1").draggable({
+                handle: "div.dragimg1"
+            });
+            $("#sbimg2").draggable({
+                handle: "div.dragimg2"
+            });
+            $("#archivepop").draggable({
+                handle: "div.draggb"
+            });
+            $("#contentpop").draggable({
+                handle: "div.dragcontent"
+            });
+            $("#aboutpop").draggable({
+                handle: "div.dragabout"
+            });
+            $("#askboxpop").draggable({
+                handle: "div.dragcommandpop"
+            });
+            $("#linkspop").draggable({
+                handle: "div.dragblogroll"
+            });
+            $(".shortcut").draggable({
+                grid: [100, 98]
+            });
+            $("#sticky").draggable({
+                handle: "div.dragsticky"
+            });
+        });
+        </script>
+    <script>
+        $(function() {
+            function toggleGrabCursor(isDragging) {
+                if (isDragging) {
+                    $('body').css('cursor', 'grabbing');
+                } else {
+                    $('body').css('cursor', 'default');
+                }
+            }
+        
+            const draggableElements = [
+                { selector: "#sbimg1", handle: "div.dragimg1" },
+                { selector: "#sbimg2", handle: "div.dragimg2" },
+                { selector: "#archivepop", handle: "div.draggb" },
+                { selector: "#contentpop", handle: "div.dragcontent" },
+                { selector: "#aboutpop", handle: "div.dragabout" },
+                { selector: "#askboxpop", handle: "div.dragcommandpop" },
+                { selector: "#linkspop", handle: "div.dragblogroll" },
+                { selector: ".shortcut"},
+            ];
+        
+            draggableElements.forEach(item => {
+                let draggableOptions = {
+                    start: function(event, ui) {
+                        toggleGrabCursor(true);
+                        $(this).data('dragging', true); // dragging is in progress
+                    },
+                    stop: function(event, ui) {
+                        toggleGrabCursor(false);
+                        $(this).removeData('dragging'); // Remove the flag
+                    }
+                };
+        
+                if (item.handle) {
+                    draggableOptions.handle = item.handle;
+                }
+                if (item.selector === ".shortcut"){
+                    draggableOptions.grid = [100,98];
+                }
+        
+                $(item.selector).draggable(draggableOptions);
+        
+                $(item.selector).on('click', function(event) {
+                    if ($(this).data('dragging')) {
+                        event.preventDefault();
+                    }
+                });
+            });
+        });
+        </script>
+    <script>
+        const taskbarButton = document.getElementById('taskbar-button');
+        const menuContainer = document.getElementById('menu-container');
+    
+        taskbarButton.addEventListener('click', () => {
+            menuContainer.style.display = (menuContainer.style.display === 'block') ? 'none' : 'block';
+        });
+            document.addEventListener('click', function(event) {
+            if (!menuContainer.contains(event.target) && !taskbarButton.contains(event.target)) {
+                menuContainer.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>

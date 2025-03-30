@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Nintendo'; 
+  src: url('') format('woff2'),
+       url('') format('woff'),
+       url('fonts/Nintendo-DS-BIOS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+    background-color: #000000;
+    background-image: url("https://amidala.neocities.org/images/bg-church.gif");
+    height: 100vh; /* Ensure body takes up full viewport height */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image from tiling */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed;
+    margin: 0;
+    opacity: 0.8;
+    text-align: justify;
+    font-family: 'Nintendo', 'Courier New', Courier, monospace; 
+    line-height: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+#sbimg1, #sbimg2, #archivepop, #aboutpop, #linkspop, #contentpop {
+    position: fixed;
+    top: 140px;
+    left: 180px;
+    padding: 0px;
+}
+
+#sbimg1, #sbimg2 {
+    display: none;
+}
+
+#sbimg1 {
+    z-index: 1005;
+    top: 140px;
+    left: 320px;
+}
+
+#sbimg2 {
+    z-index: 1004;
+    top: 80px;
+    left: 500px;
+}
+
+#desktop, #desktop2, #desktop3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+}
+
+#desktop2 {
+    left: 100px;
+}
+
+#desktop3 {
+    left: 200px;
+}
+
+.shortcut {
+    margin: 8px 0 0 10px;
+    width: 140px;
+    height: 140px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.shortcuticon {
+    color: #c4e5ff;
+    text-align: center;
+}
+
+.shortcuticon a {
+    color: #c4e5ff;
+}
+
+.shortcutname {
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 1px 1px 0px;
+    font-size: 16px;
+    line-height: 15px;
+    margin-top: 6px;
+}
+
+#archivepop, #aboutpop, #linkspop, #contentpop {
+    width: 580px;
+    height: 400px;
+    position: fixed;
+    top: 100px;
+    left: 400px;
+    z-index: 1100;
+}
+
+#aboutpop, #linkspop {
+    top: 130px;
+    left: 530px;
+}
+
+#aboutpop {
+    height: 300px;
+    top: 150px;
+}
+
+#linkspop {
+    top: 150px;
+}
+
+#aboutpop, #archivepop, #linkspop {
+    display: none;
+}
+
+.context-menu {
+  position: absolute;
+  text-align: center;
+}
+
+.context-menu ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.context-menu ul li {
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.context-menu ul li a {
+  text-decoration: none;
+}
+
+.context-menu ul li:hover {
+  background: transparent;
+}

@@ -1,0 +1,108 @@
+<html>
+   <head>
+      <title>43r14h Explorer 5.0</title>
+      <link rel="stylesheet" href="https://unpkg.com/7.css">
+      <style>
+         body {
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         }
+         .glass.window.active {
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         }
+         .window-body {
+         height: calc(100vh - 80px);
+         overflow: hidden;
+         }
+         .window-body iframe {
+         width: 100%;
+         height: 100%;
+         border: none;
+         }
+      </style>
+   </head>
+   <body class="has-scrollbar">
+      <div class="glass window active"">
+         <div class="title-bar">
+            <div class="title-bar-text">43r14h Explorer 5.0</div>
+            <div class="title-bar-controls">
+               <button aria-label="Minimize"></button>
+               <button aria-label="Maximize"></button>
+               <button aria-label="Close"></button>
+            </div>
+         </div>
+         <ul role="menubar" class="can-hover">
+            <li role="menuitem" tabindex="0" aria-haspopup="true">
+               File
+               <ul role="menu">
+                  <li role="menuitem">
+                     <a href="#menubar">
+                     New window <span>Ctrl+O</span>
+                     </a>
+                  </li>
+                  <li role="menuitem">
+                     <a href="#menubar">
+                     New private window <span>Ctrl+S</span>
+                     </a>
+                  </li>
+                  <li role="menuitem" class="has-divider">
+                     <a href="#menubar">
+                     New tab <span>Ctrl+Shift+S</span>
+                     </a>
+                  </li>
+                  <li role="menuitem"><a href="#menubar">Exit</a></li>
+               </ul>
+            </li>
+            <li role="menuitem" tabindex="0" aria-haspopup="true">
+               Edit
+               <ul role="menu">
+                  <li role="menuitem"><a href="#menubar">Undo</a></li>
+                  <li role="menuitem"><a href="#menubar">Copy</a></li>
+                  <li role="menuitem"><a href="#menubar">Cut</a></li>
+                  <li role="menuitem" class="has-divider"><a href="#menubar">Paste</a></li>
+                  <li role="menuitem"><a href="#menubar">Delete</a></li>
+                  <li role="menuitem"><a href="#menubar">Find...</a></li>
+                  <li role="menuitem"><a href="#menubar">Replace...</a></li>
+                  <li role="menuitem"><a href="#menubar">Go to...</a></li>
+               </ul>
+            </li>
+            <li role="menuitem" tabindex="0" aria-haspopup="true">
+               View
+               <ul role="menu">
+                  <li role="menuitem" tabindex="0" aria-haspopup="true">
+                     Zoom
+                     <ul role="menu">
+                        <li role="menuitem"><button>Zoom In</button></li>
+                        <li role="menuitem"><button>Zoom Out</button></li>
+                     </ul>
+                  </li>
+                  <li role="menuitem"><a href="#menubar">Status Bar</a></li>
+               </ul>
+            </li>
+            <li role="menuitem" tabindex="0" aria-haspopup="true">
+               Help
+               <ul role="menu">
+                  <li role="menuitem"><a href="#menubar">View Help</a></li>
+                  <li role="menuitem"><a href="#menubar">About</a></li>
+               </ul>
+            </li>
+            <div class="searchbox" style="margin-left: auto;">
+               <input type="search" placeholder="Search">
+               <button aria-label="search"></button>
+            </div>
+         </ul>
+         <div class="window-body has-space">
+            <div style="width: 100%; height: 100%;">
+               <iframe src="fansite.html" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
